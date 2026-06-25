@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>For My Jagiya 💜</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Segoe UI,sans-serif;background:#120018;color:#fff;overflow-x:hidden}
+.bg{position:fixed;inset:0;background:linear-gradient(135deg,#1b0030,#4a148c,#7b1fa2);z-index:-2}
+.heart{position:fixed;top:-20px;animation:fall linear infinite;opacity:.8;z-index:-1}
+@keyframes fall{to{transform:translateY(110vh)}}
+#login{height:100vh;display:flex;align-items:center;justify-content:center;padding:20px}
+.glass{background:rgba(255,255,255,.12);backdrop-filter:blur(16px);padding:35px;border-radius:24px;text-align:center;max-width:420px;width:100%;box-shadow:0 0 40px rgba(255,255,255,.15)}
+input,button{padding:14px;border:none;border-radius:12px}
+input{width:100%;margin:15px 0}
+button{background:#b86cff;color:white;cursor:pointer}
+#site{display:none}
+.hero{min-height:100vh;background:linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),url('photos/att.S39EfoMIl07V5wFka0B2NaWGSA_duwkpkBlFyYFF6sE.jpeg') center/cover;display:flex;align-items:center;justify-content:center;text-align:center;padding:20px}
+.hero h1{font-size:3rem}
+.section{max-width:1000px;margin:auto;padding:60px 20px}
+.card{background:rgba(255,255,255,.08);padding:25px;border-radius:20px;backdrop-filter:blur(10px)}
+#letter{white-space:pre-wrap;line-height:1.9}
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:15px}
+.gallery img{width:100%;height:320px;object-fit:cover;border-radius:18px;transition:.3s}
+.gallery img:hover{transform:scale(1.03)}
+.reasons{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:15px}
+.reason{background:#7b1fa2;padding:18px;border-radius:16px;text-align:center}
+footer{text-align:center;padding:50px;opacity:.9}
+.quote{text-align:center;font-size:1.4rem;margin:25px 0}
+a.btn{display:inline-block;text-decoration:none;padding:14px 20px;background:#b86cff;color:#fff;border-radius:12px}
+</style>
+</head>
+<body>
+<div class="bg"></div>
+
+<div id="login">
+<div class="glass">
+<h1>💜 For My Jagiya 💜</h1>
+<p>July 26, 2025 → July 26, 2026</p>
+<input type="password" id="pw" placeholder="Enter our password">
+<button onclick="unlock()">Open My Heart 💌</button>
+<p style="margin-top:15px">Password Hint: 62625</p>
+</div>
+</div>
+
+<div id="site">
+<section class="hero">
+<div>
+<h1>Happy 1st Anniversary Jeewon 💜</h1>
+<h2 id="days"></h2>
+<br>
+<a class="btn" target="_blank" href="https://www.youtube.com/watch?v=KmOVNVZEP9o">🎵 ONLY - Lee Hi</a>
+</div>
+</section>
+
+<section class="section">
+<div class="quote">"365 days down, forever to go." 💜</div>
+</section>
+
+<section class="section">
+<div class="card">
+<h2>💌 My Letter To You</h2><br>
+<div id="letter"></div>
+</div>
+</section>
+
+<section class="section">
+<h2 style="text-align:center;margin-bottom:20px">📸 Our Memories</h2>
+<div class="gallery">
+<img src="photos/IMG_1670.jpeg">
+<img src="photos/IMG_4561.jpeg">
+<img src="photos/IMG_4575.jpeg">
+<img src="photos/IMG_4869.jpeg">
+<img src="photos/IMG_4882.jpeg">
+</div>
+</section>
+
+<section class="section">
+<h2 style="text-align:center;margin-bottom:20px">💜 Reasons I Love You</h2>
+<div class="reasons">
+<div class="reason">Your Smile</div>
+<div class="reason">Your Kindness</div>
+<div class="reason">Your Sungit 😆</div>
+<div class="reason">Your Loyalty</div>
+<div class="reason">The Way You Love Me</div>
+<div class="reason">Everything About You</div>
+</div>
+</section>
+
+<section class="section">
+<div class="card" style="text-align:center">
+<h2>🤫 Secret</h2><br>
+<button onclick="secret()">Click if you miss me</button>
+<p id="secret"></p>
+</div>
+</section>
+
+<footer>
+Thank you for choosing me every day.<br>
+I love you yesterday, today, tomorrow, and forever.<br><br>
+— Your babyboy Basti 💜
+</footer>
+</div>
+
+<script>
+function unlock(){
+if(document.getElementById('pw').value==='62625'){
+document.getElementById('login').style.display='none';
+document.getElementById('site').style.display='block';
+window.scrollTo(0,0);
+}else alert('Wrong password 💔');
+}
+
+for(let i=0;i<50;i++){
+let h=document.createElement('div');
+h.className='heart';
+h.innerHTML='💜';
+h.style.left=Math.random()*100+'vw';
+h.style.animationDuration=(5+Math.random()*10)+'s';
+document.body.appendChild(h);
+}
+
+let start=new Date('2025-07-26');
+let diff=Math.floor((new Date()-start)/86400000);
+document.getElementById('days').innerText=diff+' Days Together 💜';
+
+const msg=`Hai baby,
+
+it's been a year, since i asked u to be my girlfriend. Grabe ba naabot jud ta sa point na di makatuohan even saimo na lisod makaabot ani for how long, and hopefully we count our days together and forever.
+
+Lisud bya saimo makaabot ingani kaduhay na relasyon but nakaya kayo nato baby through ups and downs sa kapila pa mag away but it all shows how much we love and care each other jd.
+
+Baby im so thankful and im so happy na ikaw rajd gihapon nga babae ang nasa akong kasingkasing.
+
+Pasalamat kyko sa ginoo na gihatag niya saako ang loving sweet kind supportive person i have ever met dili jd na kalimtan ang kasungiton ni jeewon.
+
+Grabe babi ba, djd ko katuo still nga ingani nata kadugay.
+
+Uu babi naa gyd tay problema japon sa atong rs but i hope we can surpass through all that and become better together.
+
+Now im looking at u baby u never change a thing gyudd, grabe gwapa jd japon kayka baby.
+
+Thank you for loving me unconditionally.
+
+Sa mga butang nga im so low u lift me up jd.
+
+Thank you baby for everything.
+
+Unta baby if ever jd na makadayon ka sa imong hometown, ayaw unta kalimti imong babyboy basti naga love saimo always.
+
+Though karon baby na anniv jd nato walang wala kyta bawi lang ta sunod na days still we're going to celebrate itt!
+
+I love you somuch baby mwaaaamwamwawaa 💜
+
+- iamsehan`;
+
+let i=0;
+function type(){
+if(i<msg.length){
+document.getElementById('letter').innerHTML+=msg.charAt(i);
+i++;
+setTimeout(type,18);
+}}
+type();
+
+function secret(){
+document.getElementById('secret').innerHTML="If I could relive one year of my life forever, it would be this year with you. 💜";
+}
+</script>
+</body>
+</html>
