@@ -108,6 +108,26 @@ Every day with you became my favorite day. 💜
 </section>
 
   <section class="section">
+
+<h2 style="text-align:center;margin-bottom:20px">
+💜 Our Favorite Moments
+</h2>
+
+<img
+id="slideshow"
+src="IMG_1670.jpeg"
+style="
+width:100%;
+max-width:700px;
+display:block;
+margin:auto;
+border-radius:25px;
+box-shadow:0 0 30px rgba(255,255,255,.2);
+">
+
+</section>
+
+  <section class="section">
 <div class="card">
 
 <h2>💜 Our Story</h2>
@@ -226,7 +246,32 @@ i++;
 setTimeout(type,18);
 }}
 type();
+const photos=[
 
+"IMG_1670.jpeg",
+"IMG_4561.jpeg",
+"IMG_4575.jpeg",
+"IMG_4869.jpeg",
+"IMG_4882.jpeg"
+
+];
+
+let current=0;
+
+setInterval(()=>{
+
+const slide=document.getElementById("slideshow");
+
+if(slide){
+
+current=(current+1)%photos.length;
+
+slide.src=photos[current];
+
+}
+
+},3000);
+  
 function secret(){
 document.getElementById('secret').innerHTML="If I could relive one year of my life forever, it would be this year with you. 💜";
 }
