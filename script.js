@@ -1,2 +1,0 @@
-function unlock(){if(document.getElementById('password').value==='62625'){document.getElementById('login').style.display='none';document.getElementById('main').style.display='block';}else alert('Wrong password');}
-document.addEventListener('DOMContentLoaded',()=>{let c=document.getElementById('counter');if(c)c.innerText='July 26, 2025 → July 26, 2026';let e=document.getElementById('typewriter');if(e)e.innerText='Hai baby... I love you so much baby 💜';});
